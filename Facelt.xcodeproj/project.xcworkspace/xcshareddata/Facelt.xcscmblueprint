@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "205F0FCD48843BBD1A7F9A19E72C430E0D174D71",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "205F0FCD48843BBD1A7F9A19E72C430E0D174D71" : 9223372036854775807,
+    "CDC9388CF69A5F44E5D01EA3FF4D145AF6146EF3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BED0FA49-3299-4203-A543-6C90F4239A43",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "205F0FCD48843BBD1A7F9A19E72C430E0D174D71" : "Facelt\/",
+    "CDC9388CF69A5F44E5D01EA3FF4D145AF6146EF3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Facelt",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Facelt.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LeePepe\/FaceIt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "205F0FCD48843BBD1A7F9A19E72C430E0D174D71"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LeePepe\/iOS-Learning.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CDC9388CF69A5F44E5D01EA3FF4D145AF6146EF3"
+    }
+  ]
+}

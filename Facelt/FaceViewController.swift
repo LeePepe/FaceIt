@@ -45,6 +45,39 @@ class FaceViewController: UIViewController {
         expression.mouth = expression.mouth.sadderMouth()
     }
     
+    private struct Animation {
+        static let ShakeAngle = CGFloat(M_PI / 6)
+        static let ShakeDuration = 0.5
+    }
+    
+    @IBAction func headshake(_ sender: UITapGestureRecognizer) {
+        UIView.animate(
+            withDuration: Animation.ShakeDuration,
+            animations: {
+                self.faceView.transform = self.faceView.transform.rotated(by: Animation.ShakeAngle)
+        },
+            completion: { (finished) in
+                if finished {
+                    UIView.animate(
+                        withDuration: Animation.ShakeDuration,
+                        animations: {
+                            self.faceView.transform = self.faceView.transform.rotated(by: -Animation.ShakeAngle * 2)
+                    },
+                        completion: { (finished) in
+                            if finished {
+                                UIView.animate(
+                                    withDuration: Animation.ShakeDuration,
+                                    animations: {
+                                        self.faceView.transform = self.faceView.transform.rotated(by: Animation.ShakeAngle)
+                                },
+                                    completion: nil
+                                )
+                            }
+                    })
+                }
+        })
+    }
+    
     @IBAction func toggleEyes(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
             switch expression.eyes {
@@ -70,9 +103,9 @@ class FaceViewController: UIViewController {
     private func updateUI() {
         if faceView != nil {
             switch expression.eyes {
-            case .Open: faceView.eyeOpen = true
-            case .Closed: faceView.eyeOpen = false
-            case .Squinting: faceView.eyeOpen = false
+            case .Open: faceView.eyesOpen = true
+            case .Closed: faceView.eyesOpen = false
+            case .Squinting: faceView.eyesOpen = false
             }
             
             faceView.mouthCurvature = mouthCurvatures[expression.mouth] ?? 0.0

@@ -22,7 +22,7 @@ class EyeView: UIView {
             UIView.transition(
                 with: self,
                 duration: 0.1,
-                options: [.transitionFlipFromTop, ],
+                options: [.transitionFlipFromTop, .curveEaseInOut],
                 animations: {
                     self._eyesOpen = newValue
             },
